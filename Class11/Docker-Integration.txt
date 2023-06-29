@@ -71,7 +71,7 @@ Docker plugin
 
 Step 5: Test the sample application build
 
-https://github.com/cloudnloud/docker-jenkins-integration-sample
+https://github.com/devopshint/jenkins-docker-example.git
 
 create jenkins freestyle project
 
@@ -81,7 +81,7 @@ trigger now and ensure build is fine.
 *******************************************************************************************************************
 Step 6: verify the dockerfile
 
-https://github.com/cloudnloud/docker-jenkins-integration-sample/blob/main/Dockerfile
+https://github.com/devopshint/jenkins-docker-example/blob/main/Dockerfile
 
 *******************************************************************************************************************
 Step 7: create new docker repository in hub.docker.com
