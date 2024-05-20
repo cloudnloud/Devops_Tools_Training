@@ -16,13 +16,42 @@ To start this handson lab,you need following resources.
 *******************************************************************************************************************
 Step 1 : Install pre-requisite software packages
 
-- yum install java-1.8.0-openjdk-devel vim wget git -y
-- systemctl stop firewalld;systemctl disable firewalld
-- wget https://archive.apache.org/dist/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.tar.gz
-- tar xvf apache-maven-3.8.5-bin.tar.gz
-- cd apache-maven-3.8.5/
-- mkdir -p /usr/local/apache-maven
-- mv *  /usr/local/apache-maven
+```
+curl -O https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz
+```
+
+```
+tar zxvf openjdk-11.0.1_linux-x64_bin.tar.gz
+```
+
+```
+mv jdk-11.0.1 /usr/local/
+```
+
+```
+yum install java-11-openjdk-devel
+```
+
+```
+yum install vim wget  git -y
+```
+
+```
+systemctl stop firewalld;systemctl disable firewalld
+```
+
+```
+wget https://archive.apache.org/dist/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.tar.gz
+```
+
+
+```
+tar xvf apache-maven-3.8.5-bin.tar.gz
+```
+
+```
+mv apache-maven-3.8.5  /usr/local/apache-maven
+```
 
 *******************************************************************************************************************
 Step 2 : Configure environment variables
