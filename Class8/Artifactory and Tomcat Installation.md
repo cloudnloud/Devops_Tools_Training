@@ -209,7 +209,7 @@ http://<linux machine ip address>:8081/artifactory/
 
 ---------------------------------------------------------------------
 
-- https://github.com/VivekkadamGit/hello-world-jenkins.git
+- [https://github.com/VivekkadamGit/hello-world-jenkins.git](https://github.com/vijaymentor/hello-world-jenkins.git)
 
 - this above git repo is working in java 11
 
