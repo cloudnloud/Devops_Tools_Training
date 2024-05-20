@@ -5,14 +5,14 @@ To start this handson lab,you need following resources.
 3. Make sure you have root access or root login credentials.
 
 *******************************************************************************************************************
-Step 1 : Install pre-requisite software packages
-Step 2 : Configure environment variables
-Step 3: Configure Jenkins Software Repository
-Step 4: Configure Jenkins Key
-Step 5: Install Jenkins
-Step 6: start the Jenkins Service Persistantly
-Step 7: Install the necessary plugins
-Step 8: Global Tools Settings - In Jenkins Console - JAVA , MAVEN, GIT
+- Step 1 : Install pre-requisite software packages
+- Step 2 : Configure environment variables
+- Step 3: Configure Jenkins Software Repository
+- Step 4: Configure Jenkins Key
+- Step 5: Install Jenkins
+- Step 6: start the Jenkins Service Persistantly
+- Step 7: Install the necessary plugins
+- Step 8: Global Tools Settings - In Jenkins Console - JAVA , MAVEN, GIT
 *******************************************************************************************************************
 Step 1 : Install pre-requisite software packages
 
