@@ -205,3 +205,16 @@ http://<linux machine ip address>:8081/artifactory/
 
 ## Step 8: Create new pipeline and enable manual deployment to deploy application in tomcat web application server
 ## Step 9: Create new pipeline and enable auto deployment to deploy application in tomcat web application server
+
+
+---------------------------------------------------------------------
+
+- https://github.com/VivekkadamGit/hello-world-jenkins.git
+
+- this above git repo is working in java 11
+
+- after we build we get the webapp.war.
+
+- webapp.war
+
+- http://34.69.104.87:8080/webapp/
