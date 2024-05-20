@@ -62,12 +62,12 @@ In this file
 
 
 
-export JAVA_HOME=/usr/local/jdk-11.0.1/
-export JRE_HOME=/usr/lib/jvm/jre-11/
-PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$JRE_HOME/bin
-export M2_HOME=/usr/local/apache-maven
-export M2=$M2_HOME/bin
-export PATH=$M2:$PATH
+- export JAVA_HOME=/usr/local/jdk-11.0.1/
+- export JRE_HOME=/usr/lib/jvm/jre-11/
+- PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$JRE_HOME/bin
+- export M2_HOME=/usr/local/apache-maven
+- export M2=$M2_HOME/bin
+- export PATH=$M2:$PATH
 
 
 source ~/.bash_profile
