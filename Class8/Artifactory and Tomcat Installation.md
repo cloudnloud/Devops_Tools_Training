@@ -26,6 +26,7 @@ Artifactory
 ```
 curl -O https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz
 ```
+```
 tar zxvf openjdk-11.0.1_linux-x64_bin.tar.gz
 mv jdk-11.0.1 /usr/local/
 yum install java-11-openjdk-devel
