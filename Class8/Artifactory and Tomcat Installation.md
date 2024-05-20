@@ -71,8 +71,9 @@ Note ::::::
 2) cat /etc/yum.repos.d/jfrog-artifactory-rpms.repo (take base url and check in web browser you can seel all repo)
 3)now you aee able to see jfrog artifactory }
 
+## to ensure the repo is configured
 
-
+- yum repolist
 
 *******************************************************************************************************************
 
