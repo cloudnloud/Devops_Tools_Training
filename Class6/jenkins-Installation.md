@@ -100,7 +100,7 @@ wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.r
 - Step 4: Configure Jenkins Key
 
 ```
-rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+rpm --import https://pkg.jenkins.io/redhat/jenkins.io-2023.key
 ```
 *******************************************************************************************************************
 - Step 5: Install Jenkins
