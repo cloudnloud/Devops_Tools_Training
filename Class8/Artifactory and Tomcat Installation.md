@@ -223,6 +223,21 @@ http://<linux machine ip address>:8081/artifactory/
 
 *******************************************************************************************************************
 
+**********************
+
+open tomcat console and download gameoflife.war file.deploy manually
+
+************************************
+
+- configure java-home,maven home,git in jenkins console
+
+- go to manage jenkins --> tools --> configure JDK & MAVEN & git
+- note : open cat ~/.profile . take JAVA_HOME from this file and paste it here.
+- uncheck install automatically
+- to configure mavan home run mvn -version command.
+
+- 
+
 ## Step 8: Create new pipeline and enable manual deployment to deploy application in tomcat web application server
 ## Step 9: Create new pipeline and enable auto deployment to deploy application in tomcat web application server
 
@@ -231,10 +246,22 @@ http://<linux machine ip address>:8081/artifactory/
 
 - [https://github.com/VivekkadamGit/hello-world-jenkins.git](https://github.com/vijaymentor/hello-world-jenkins.git)
 
-- this above git repo is working in java 11
+- this above git repo is working in java 17
 
 - after we build we get the webapp.war.
 
 - webapp.war
 
 - http://34.69.104.87:8080/webapp/
+
+----------------------------
+
+- create a maven pipeline
+- give https://github.com/vijaymentor/hello-world-jenkins repo
+- save and run the build
+- now ur build will be completed without any issues and u should get the war file
+- now we are going to add tomcat webserver
+- in the same pipeline under Post-build Actions --> Deploy war/ear to a container --> below inputs u give ?
+- WAR/EAR files - **/*.war
+- containers --> select tomcat 9.x remote --> add credentials --> click add --> kind --> username and password --> scope global (jenkins,nodes,items,all child items etc) --> username --> give tomcat --> password --> s3cret --> ID --> tomcat url - http://34.44.115.11:8080/ --> save --> run the pipeline
+ 
