@@ -17,40 +17,25 @@ To start this handson lab,you need following resources.
 - Step 1 : Install pre-requisite software packages
 
 ```
-curl -O https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz
+apt update
+apt install fontconfig openjdk-17-jre
 ```
 
 ```
-tar zxvf openjdk-11.0.1_linux-x64_bin.tar.gz
+apt install vim wget  git -y
 ```
 
 ```
-mv jdk-11.0.1 /usr/local/
-```
-
-```
-yum install java-11-openjdk-devel
-```
-
-```
-yum install vim wget  git -y
-```
-
-```
-systemctl stop firewalld;systemctl disable firewalld
-```
-
-```
-wget https://archive.apache.org/dist/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.tar.gz
+wget https://dlcdn.apache.org/maven/maven-3/3.9.8/binaries/apache-maven-3.9.8-bin.tar.gz
 ```
 
 
 ```
-tar xvf apache-maven-3.8.5-bin.tar.gz
+tar xvf apache-maven-3.9.8-bin.tar.gz
 ```
 
 ```
-mv apache-maven-3.8.5  /usr/local/apache-maven
+mv apache-maven-3.9.8  /usr/local/apache-maven
 ```
 
 
@@ -58,16 +43,15 @@ mv apache-maven-3.8.5  /usr/local/apache-maven
 *******************************************************************************************************************
 - Step 2 : Configure environment variables
 ```
-vim ~/.bash_profile
+vim ~/.profile
 ```
 
 - In this file
 ```
 
 
-export JAVA_HOME=/usr/local/jdk-11.0.1/
-export JRE_HOME=/usr/lib/jvm/jre-11/
-PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$JRE_HOME/bin
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
 export M2_HOME=/usr/local/apache-maven
 export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
@@ -75,7 +59,7 @@ export PATH=$M2:$PATH
 ```
 
 ```
-source ~/.bash_profile
+source ~/.profile
 ```
 
 
@@ -87,6 +71,9 @@ source ~/.bash_profile
 mvn -version
 ```
 
+```
+java --version
+```
 **********************************************************************************************************************************
 
 
