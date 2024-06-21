@@ -133,23 +133,20 @@ vim /etc/systemd/system/tomcat.service
 
 ```
 [Unit]
-Description=Tomcat Server
-After=syslog.target network.target
-
+Description=Apache Tomcat Web Application Container
+After=network.target
 [Service]
 Type=forking
 User=tomcat
 Group=tomcat
-
-Environment=JAVA_HOME=/usr/lib/jvm/jre
-Environment='JAVA_OPTS=-Djava.awt.headless=true'
-Environment=CATALINA_HOME=/usr/local/tomcat
-Environment=CATALINA_BASE=/usr/local/tomcat
-Environment=CATALINA_PID=/usr/local/tomcat/temp/tomcat.pid
-Environment='CATALINA_OPTS=-Xms512M -Xmx1024M'
-ExecStart=/usr/local/tomcat/bin/catalina.sh start
-ExecStop=/usr/local/tomcat/bin/catalina.sh stop
-
+Environment="JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64"
+Environment="JAVA_OPTS=-Djava.security.egd=file:///dev/urandom -Djava.awt.headless=true"
+Environment="CATALINA_BASE=/opt/tomcat"
+Environment="CATALINA_HOME=/opt/tomcat"
+Environment="CATALINA_PID=/opt/tomcat/temp/tomcat.pid"
+Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC"
+ExecStart=/opt/tomcat/bin/startup.sh
+ExecStop=/opt/tomcat/bin/shutdown.sh
 [Install]
 WantedBy=multi-user.target
 ```
