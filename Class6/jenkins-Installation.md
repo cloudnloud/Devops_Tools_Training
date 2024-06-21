@@ -1,7 +1,7 @@
 To start this handson lab,you need following resources.
 
 1. Google cloud (or any other cloud or some VM's from your local machine).
-2. Jenkins VM should have 2 CPU / 4 GB memory / 40 gb Disk. Also Install Rocky linux in this machine.
+2. Jenkins VM should have 2 CPU / 4 GB memory / 40 gb Disk. Install ubuntu LTS linux in this machine.
 3. Make sure you have root access or root login credentials.
 
 *******************************************************************************************************************
