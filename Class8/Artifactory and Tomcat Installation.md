@@ -119,9 +119,9 @@ change heap size to 512mb --> if you want play in testing this also just for ref
 ## Step 6: Install TOMCAT Web Application server
 ```
 mkdir /usr/local/tomcat
-sudo wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.33/bin/apache-tomcat-9.0.33.tar.gz
-sudo tar xvf apache-tomcat-9.0.33.tar.gz --strip-components=1 -C /usr/local/tomcat
-sudo ln -s /usr/local/tomcat/apache-tomcat-9.0.33 /usr/local/tomcat/tomcat
+sudo wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.90/bin/apache-tomcat-9.0.90.tar.gz
+sudo tar xvf apache-tomcat-9.0.90.tar.gz --strip-components=1 -C /usr/local/tomcat
+sudo ln -s /usr/local/tomcat/apache-tomcat-9.0.90 /usr/local/tomcat/tomcat
 sudo useradd -r tomcat
 sudo chown -R tomcat:tomcat /usr/local/tomcat
 ```
