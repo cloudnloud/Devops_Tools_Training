@@ -1,10 +1,10 @@
 To start this handson lab,you need following resources.
 
 - 1. Google cloud (or any other cloud or some VM's from your local machine).
-- 2. Jenkins VM should have 2 CPU / 4 GB memory / 40 gb Disk. Install Jenkins in **rocky linux 8 and above** OS machine.
+- 2. Tomcat VM should have 2 CPU / 4 GB memory / 40 gb Disk. Install Tomcat in **Ubuntu 20 LTS OS machine.
 - 3. Class 6 and Class 7 must be completed and ready
 - 4. Make sure you have root access or root login credentials.
-- 5. For this Tomcat and Artifactory VM you must have 2 CPU and minimum 7.5 GB memory.Create this VM with **rocky linux 8 and above** OS machine
+- 5. For this Tomcat and Artifactory VM you must have 2 CPU and minimum 7.5 GB memory.Create this VM with **Ubuntu 20 LTS OS ** OS machine
 
 *******************************************************************************************************************
 - Step 1 : Install pre-requisite software packages
@@ -159,10 +159,7 @@ systemctl enable tomcat
 systemctl start tomcat
 systemctl status tomcat
 ```
---------------------------------------------------------
-```
-systemctl stop firewalld;systemctl disable firewalld
-```
+
 --------------------------------------------------------------------
 ```
 vim /usr/local/tomcat/conf/tomcat-users.xml
@@ -194,6 +191,7 @@ save the file and exit.Now run the below commands
 ```
 systemctl daemon-reload
 systemctl enable tomcat
+systemctl stop tomcat
 systemctl start tomcat
 systemctl status tomcat
 ```
